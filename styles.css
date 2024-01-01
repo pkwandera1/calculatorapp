@@ -7,26 +7,27 @@ body {
 .main-container {
     max-width: 400px;
     height: auto;
-    border: 1px solid gray;
+    border: 5px solid rgb(59, 58, 58);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
 }
 .display {
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 390px;
     height:  100px;
     overflow-wrap: break-word;
-}
-.buttons1-container {
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid gray;
+    border: 1px solid gray;
     margin: 5px;
-    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgb(179, 178, 178);
+    border-radius: 5px;
 }
-.backspace {
-    font-size: 24px;
-    background-color: white;
-    border: 1px solid white;
-}
-.operations {
+
+button {
     font-size: 36px;
     width: 90px;
     height: 90px;
@@ -35,20 +36,22 @@ body {
     border-radius: 50%;
     border: 1px solid rgb(236, 232, 232);
 }
-.buttons2-container {
+.buttons-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .screen-display {
     word-wrap: break-word;
+    font-size: 36px;
+    text-align: end;
 }
 @media (max-width: 420px) {
-    .operations {
+    buttons {
         font-size: 28px;
         width: calc(25% - 6px);
         height: calc(25vw - 6px);
         margin: 3px;
         box-sizing: border-box;
-  }
+}
 }
